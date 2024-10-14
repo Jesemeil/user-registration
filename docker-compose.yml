@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  user-registration:
+    container_name: user-registration-app
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27018/cloudapp
+
+  mongodb:
+    container_name: mongodb-user-registration
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:

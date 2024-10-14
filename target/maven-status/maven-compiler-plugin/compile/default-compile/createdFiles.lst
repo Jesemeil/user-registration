@@ -1,0 +1,5 @@
+com/semicolon/user_registration/controller/UserController.class
+com/semicolon/user_registration/UserRegistrationApplication.class
+com/semicolon/user_registration/repository/UserRepository.class
+com/semicolon/user_registration/model/User.class
+com/semicolon/user_registration/service/UserService.class
