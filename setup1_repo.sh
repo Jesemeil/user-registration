@@ -18,7 +18,7 @@ BRANCHES=("dev" "uat" "system-test" "prod-support")
 
 echo "Starting repository setup for '$REPO_NAME'..."
 
-# Authenticate GitHub CLI
+
 echo "Checking GitHub CLI authentication..."
 if ! gh auth status > /dev/null 2>&1; then
   echo "GitHub CLI not authenticated. Please run 'gh auth login'."
